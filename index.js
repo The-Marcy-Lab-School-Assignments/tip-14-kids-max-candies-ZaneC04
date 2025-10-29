@@ -10,7 +10,7 @@
  * @returns {boolean[]}
  */
 function kidsWithCandies(candies, extraCandies) {
-
+    const greatest = Math.max(...candies)
+    return candies.map((kid) => kid + extraCandies >= greatest)
 }
-
 module.exports = kidsWithCandies;
